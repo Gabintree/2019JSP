@@ -20,7 +20,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>가빈이의 아무것도 모르는 코딩 연습</title>
 </head>
 <body>
 
@@ -101,10 +101,32 @@ while(header.hasMoreElements()){
 	
 	
 }
+%>
 
 
+			<form action="Jsp0516_date.jsp" method="post">
+			<label for="name">이름</label>
+			<input type="text" id="name" name="name">
+			<input type="submit" value="전송">
+			</form>
+			
+<%
+String name = request.getParameter("name");
+if(name != null){
+	String naming=null;
+	pageContext.forward("Jsp0516_chap6.jsp");
+
+	}
 
 %>
 
+	포워딩 수행 후 메시지입니다.<br>
+	<%out.print("하나<br>"); %>
+	<%out.print("둘<br>"); %>
+	<%out.print("셋<br>"); %>
+	
+	
+	<%
+	out.print("여기는 pageContextForwarded.jsp 페이지 입니다!"); %>
 </body>
 </html>
