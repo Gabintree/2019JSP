@@ -1,0 +1,99 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>회원 가입</title>
+</head>
+<body>
+		<form action="Ncstest" method="post">
+			<table>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>이름</th>
+					<td><input type="text" name="mbname"></td>
+				</tr>
+				<tr>
+					<th>아이디</th> 
+					<td>
+						<input type="text" name="mbid"> <a href="#">중복확인</a>
+					</td>
+				</tr>
+				<tr>
+					<th>비밀번호</th>
+					<td><input type="text" name="mbpw"> 6자 이상</td>
+				</tr>
+				<tr>
+					<th>비밀번호 확인</th>
+					<td><input type="text" name="mbpw_re"></td>
+				</tr>
+				<tr>
+					<th>비밀번호 힌트/답변</th> 
+					<td>
+							<select style="width : 173px; height : 21px; " name="pwhintans" id="pwhintans" >
+					            <option value="">선택하세요</option>
+					            <option value="30">졸업한 초등학교 이름은?</option>
+					            <option value="31">제일 친한 친구의 핸드폰 번호는?</option>
+					            <option value="32">아버지 성함은?</option>
+					            <option value="33">어머니 성함은?</option>
+					            <option value="34">어릴 적 내 별명은?</option>
+					            <option value="35">가장 아끼는 물건은?</option>
+					            <option value="36">좋아하는 동물은?</option>
+					            <option value="37">좋아하는 색깔은?</option>
+					            <option value="38">좋아하는 음식은?</option>
+					        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                <th>답변</th>
+                    <td><input type="text" name="pwhintans"></td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td><input type="text" name="cell" inputmode="tel"></td>
+                </tr>
+                <tr>
+                    <th>메일/sns 정보 수신</th>
+                    <td>
+			            <label for="info"></label>
+						<input type="radio" id="info" name="info" value="수신">수신
+						<input type="radio" id="info" name="info" value="수신거부" checked>수신거부
+                    </td>
+                </tr>
+                <tr>
+                    <th>관심분야</th>
+                    <td>
+                 		 <input type="checkbox" name="interest" value="생두"> 생두
+                 		 <input type="checkbox" name="interest" value="원두"> 원두
+                 		 <input type="checkbox" name="interest" value="로스팅"> 로스팅
+                 		 <input type="checkbox" name="interest" value="핸드드립"> 핸드드립
+                 		 <input type="checkbox" name="interest" value="에스프레소"> 에스프레소
+                 		 <input type="checkbox" name="interest" value="창업"> 창업
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+		    </table>
+		    <hr>
+		    	<div style ="text-align : center;">
+			   	<input type="submit" value="회원가입">
+                <input type="reset" value="취소">
+                </div>
+   	       </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>가빈님의 아무것도 모르는 코딩 연습중</title>
+</head>
+<body>
+																		<!-- get방식 -->
+			<form action="PRServlet" method="get">
+			<fieldset>
+			<legend> 개인정보 get 방식 </legend>
+			<ul>
+			<li>
+			<label for="name">이름</label>
+			<input type="text" id="name" name="name" value="아무거나">
+			</li>
+			<li>
+			<label for="mail">메일주소</label>
+			<input type="email" id="mail" name="mail">
+			</li>
+			<li>
+			<label for="lunch">점심메뉴</label>
+			<input type="radio" id="lunch" name="lunch" value="중화냉면">중화냉면
+			<input type="radio" id="lunch" name="lunch" value="냉모밀">냉모밀
+			</li>
+			<li>
+			<label for="food">좋아하는 음식</label>
+			<input type="checkbox" id="food" name="food" value="중화냉면">중화냉면
+			<input type="checkbox" id="food" name="food" value="냉모밀">냉모밀
+			<input type="checkbox" id="food" name="food" value="후라이드치킨">후라이드치킨
+			<input type="checkbox" id="food" name="food" value="김밥">김밥
+			</li>
+			</ul>
+			<input type="submit" value="Get전송">
+			</fieldset>
+			</form>
+			
+																		<!-- post방식 -->
+			<form action="PRServlet" method="post">
+			<fieldset>
+			<legend> 개인정보 post 방식</legend>
+			<ul>
+			<li>
+			<label for="name">이름</label>
+			<input type="text" id="name" name="name">
+			</li>
+			<li>
+			<label for="mail">메일주소</label>
+			<input type="email" id="mail" name="mail">
+			</li>
+			</ul>
+			<input type="submit" value="Post전송">
+			</fieldset>
+			</form>
+</body>
+</html>
