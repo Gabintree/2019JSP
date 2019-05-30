@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EL에 요청 파라미터 데이터 전달하기</title>
+</head>
+<body>
+	<form action ="20190528_Param.jsp" method ="post">
+		이름<input type="text" name="name"><hr>
+		사용언어
+		<table>
+			<tr>
+				<td><input type ="checkbox" name ="language" value="java"></td>
+				<td>Java</td>
+			</tr>
+			<tr>
+				<td><input type ="checkbox" name ="language" value= "C#"></td>
+				<td>C#</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="language" value="phython"></td>
+				<td>phython</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="language" value="ruby"></td>
+				<td>ruby</td>
+			</tr>
+		</table><hr>
+		<input type ="submit" value="전송">
+	</form>
+</body>
+</html>

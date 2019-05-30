@@ -1,0 +1,11 @@
+<taglib xmlns="http://java.sun.com/xml/ns/javaee" version="2.1">
+	<description>withDocTag확인</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>withDocTag.tld</short-name>
+	
+	<tag>
+		<name>withDocTag</name>
+		<tag-class>mytest.SimpleTag_WithDocTag</tag-class>
+		<body-content>scriptless</body-content>
+	</tag>
+</taglib>
